@@ -14,6 +14,26 @@ public class TestArrayList {
 		
 		//向al中加入数据（类型是Object）
 		Emp staff1 = new Emp("张三", 1345.4,1966,11,21);
+		Emp staff2 = new Emp("李四", 2645.4,1956,10,23);
+		
+		//将两个员工添加到集合中
+		al.add(staff1);
+		al.add(staff2);
+		al.add(staff2);
+
+		System.out.println("ArrayList的初始大小："+al.size());
+		
+		//如何访问al中对象数据
+		//访问第一个对象
+		//Emp temp = (Emp)al.get(0);
+		//System.out.println("第一个人的名字：" + temp.getName());
+		
+		//遍历集合中，所有的数据
+		for(int i=0; i<al.size(); i++){
+			Emp temp = (Emp)al.get(i);
+			System.out.println("名字是：" + temp.getName());
+		}
+		
 	}
 }
 /**
