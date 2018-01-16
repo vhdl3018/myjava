@@ -34,9 +34,14 @@ public class TestEmployee {
 		em.allEmp();
 	}
 }
+/**
+ * 员工管理类
+ * @author qsqxj
+ *
+ */
 class EmployeeManage{
 	private ArrayList al = null;
-	
+	//构造方法，生成一个ArrayList类
 	public EmployeeManage(){
 		al = new ArrayList();
 	}
