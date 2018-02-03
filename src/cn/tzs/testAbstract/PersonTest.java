@@ -16,5 +16,12 @@ public class PersonTest {
 		for(Person p : persons){
 			System.out.println(p.getDescription());
 		}
+		
+		System.out.println("==================≤‚ ‘equals()====================");
+		
+		System.out.println(persons[0].equals(persons[1]));
+		Person p = persons[1];
+		System.out.println(p.equals(persons[1]));
+		
 	}
 }
